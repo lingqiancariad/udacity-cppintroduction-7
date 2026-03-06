@@ -15,13 +15,13 @@ void runSensorDiagnostics(const std::string& sensorName, int localErrors) {
     
     for (int i = 0; i < localErrors; i++) {
         if (log_level == 2)
-            std::cout << "[Error Level 2] " << sensorName << " Error " << i+1 << std::endl;
+            std::cout << "[Level 2] " << sensorName << " Error " << i+1 << std::endl;
         else
             std::cout << "Other Error at " << sensorName << i+1 << std::endl;
         // TODO: Increment global totalErrors
         totalErrors++;
     }
 
-    std::cout << "Diag done on " << sensorName << std::endl;
+    std::cout << "Diag done on " << sensorName << ". Found Error " << localErrors << std::endl;
     std::cout << "---------------------------------" << std::endl;
 }
