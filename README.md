@@ -62,8 +62,13 @@ Total system-wide errors: 6
 ## Build Instructions
 
 Compile with g++:
+
 `g++ *.cpp -o sensor_diag`
+
 OR:
+
 Make sure your build task includes both `.cpp` files.
-`g++ main.cpp sensor_diagnostics.cpp -o diagnostics`
+
+`g++ main.cpp sensor_diagnostics.cpp -o sensor_diag`
+
 
